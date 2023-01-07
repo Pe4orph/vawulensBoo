@@ -1,0 +1,38 @@
+.contacts__container {
+	display: grid;
+	place-items: center;
+}
+
+.contacts__wrapper {
+	width: fit-content;
+	display: flex;
+	gap: 2rem;
+}
+
+.contacts__wrapper a {
+	background: var(--color-primary);
+	font-size: 2rem;
+	line-height: 0.8;
+	border: 2px solid transparent;
+	transition: var(--transition);
+	padding: 2rem;
+	border-radius: 1.5rem;
+}
+
+.contacts__wrapper a:hover {
+	background: transparent;
+	border-color: var(--color-gray-100);
+}
+
+/* MEDIA QUERIES  (only for small screens) */
+@media screen and (max-width: 600px) {
+	.contacts__wrapper {
+		gap: 1.5rem;
+	}
+
+	.contacts__wrapper a {
+		padding: 1rem;
+		font-size: 1.2rem;
+		border-radius: 1rem;
+	}
+}
